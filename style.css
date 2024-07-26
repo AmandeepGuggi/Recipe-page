@@ -1,0 +1,106 @@
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wezen-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+
+--ff-serif: "Young Serif", serif;
+--fw-400: 400;
+--ff-outfit: "Outfit", sans-serif;
+--fw-600: 600;
+--fw-700: 700;
+--fs-para: 16px;
+--padding: 1rem;
+--margin: 1.5rem; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: var(--fs-para);
+    font-family: var(--ff-outfit);
+    color: rgba(0, 0, 0, 0.507);
+    font-weight: var(--fw-600);
+    /* width: 100; */
+    /* overflow-x: hidden; */
+    text-wrap: wrap;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6, p{
+    font-size: var(--fs-para);
+}
+h1{
+    font-family: var(--ff-serif);
+    color: var(--Dark-Charcoal);
+    font-size: 35px;
+}
+h4{
+    color: var(--Dark-Raspberry);
+}
+.sub-titles{
+    color: var(--Nutmeg);
+    font-size: 30px;
+    font-family: var(--ff-serif);
+    font-weight: var(--fw-400);
+}
+span{
+    color: var(--Dark-Charcoal);
+    font-weight: var(--fw-700);
+}
+ul li::marker{
+    color: var(--Dark-Charcoal);
+}
+ol li::marker{
+    color: var(--Nutmeg);
+    font-weight: var(--fw-600);
+}
+.menu{
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+    padding-bottom: var(--margin);
+    width: 100vw;
+    box-sizing: border-box;
+}
+img{
+    width: 100vw;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    padding: var(--margin);
+}
+@media (width<400px){
+    img{
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+.information{
+    font-family: var(--ff-outfit);
+}
+.prep-time{
+    background-color: var(--Eggshell);
+    border-radius: 10px;
+    padding: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 10px;
+}
+.container:not(:last-child), tr:not(:last-child){
+    border-bottom: 1px solid var(--Light-Grey);
+}
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+td[data="data"]{
+    color: var(--Nutmeg);
+    font-weight: var(--fw-700);
+    
+}
